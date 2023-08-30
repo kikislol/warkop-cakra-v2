@@ -4,7 +4,7 @@ import React from "react";
 
 const Featured = () => {
     return (
-        <div className=" overflow-x-scroll text-red-500">
+        <div className=" overflow-x-scroll text-red-800">
             {/*WRAPPER*/}
             <div className="w-max flex">
                 {/* SINGLE ITEM */}
@@ -25,15 +25,15 @@ const Featured = () => {
                             </div>
                         )}
                         {/* TEXT CONTAINER */}
-                        <div className="flex-1 flex flex-col gap-4 items-center">
+                        <div className="flex-1 flex flex-col items-center justify-center text-center gap-4">
                             <h1 className="text-xl font-bold uppercase xl:text-2xl 2xl:text-3xl">
                                 {item.title}
                             </h1>
-                            <p className="p-4">{item.desc}</p>
+                            <p className="p-4 2xl:p-8">{item.desc}</p>
                             <span className="text-xl font-bold">
                                 {item.price}
                             </span>
-                            <button className="bg-red-500 text-white p-2 rounded-md">
+                            <button className="bg-red-800 text-white p-2 rounded-md">
                                 Add to cart
                             </button>
                         </div>
