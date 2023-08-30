@@ -7,7 +7,7 @@ const Footer = () => {
             <Link href="/" className="font-bold text-xl">
                 Warkop Cakra
             </Link>
-            <p>ALL RIGHTS RESERVED. !</p>
+            <p>ALL RIGHTS RESERVED.</p>
         </div>
     );
 };
