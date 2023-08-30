@@ -8,21 +8,25 @@ const data = [
         id: 1,
         title: "always fresh & always tasty",
         image: "/slide1.jpg",
+        alt: "burger",
     },
     {
         id: 2,
         title: "we deliver your order wherever you are in Surabaya",
         image: "/slide2.jpg",
+        alt: "burger and fries delivery",
     },
     {
         id: 3,
         title: "the best fried mix to share with your family & friends",
         image: "/slide3.jpg",
+        alt: "special mix",
     },
     {
         id: 4,
         title: "Try our italian pasta",
         image: "/slide4.jpg",
+        alt: "bolognese",
     },
 ];
 
@@ -34,7 +38,7 @@ const Slider = () => {
             setCurrentSlide(
                 currentSlide === data.length - 1 ? 0 : currentSlide + 1
             );
-        }, 4000);
+        }, 5000);
         return () => clearInterval(interval);
     });
     return (
@@ -52,7 +56,7 @@ const Slider = () => {
             <div className="w-full relative flex-1">
                 <Image
                     src={data[currentSlide].image}
-                    alt=""
+                    alt={data[currentSlide].alt}
                     fill
                     className="object-cover"
                 />
